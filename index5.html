@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHAPTER 5</title>
+    <link rel="stylesheet" href="bootstrap-4.4.1-dist (1)/bootstrap-4.4.1-dist/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">CHAPTER 5</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="index.html">CHAPTER 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index2.html">CHAPTER 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index3.html">CHAPTER 3</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index4.html">CHAPTER 4</a>
+                    </li>
+                    <li class="nav-item">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index5.html">CHAPTER 5</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index6-9.html">CHAPTER 6-9</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index9-11.html">CHAPTER 9-11</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index12-13.html">CHAPTER 12-13</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index14-16.html">CHAPTER 14-16</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index17-20.html">CHAPTER 17-20</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+    <script>
+            // task 1 and 2 : mixed
+
+            var v1 = +prompt("Enter 1st Value ")
+            var sign = prompt("Enter The Operator")
+            var v2 = +prompt("Enter 2nd Value ")
+
+            if(sign === "-"){
+            var n = " Result Of The Subtraction Of " + v1 + " And " + v2 + " Is "
+            var e = v1-v2
+            alert( n + e )
+            }
+            else if(sign === "+"){
+            var n = " Sum Of " + v1 + " And " + v2 + " Is "
+            var e = v1+v2
+            alert( n + e )
+            }
+            else if(sign === "*"){
+            var n = " result of the multiplication of " + v1 + " and " + v2 + " is "
+            var e = v1*v2
+            alert( n + e )
+            }
+            else if(sign === "/"){
+            var n = " result of the dividition of " + v1 + " and " + v2 + " is "
+            var e = v1/v2
+            alert( n + e )
+            }
+            else{
+                alert("\n you have made some mistake \n enter values one by one ")
+            }
+
+            // task 3
+
+            var nu = +prompt(" declare any number ")
+            document.write(" value after variable decleration is undefined  " + "<br>")
+            document.write(" initial number is : " + nu + "<br>")
+            document.write(" value after increment is : " + ++nu + "<br>" + " value after addition is : ")
+            document.write(nu+nu +"<br>" )
+            document.write(" value after decrement is : " + --nu  + "<br>")
+            document.write(" the remainder is : " + nu%2 )
+
+
+            // task 4
+
+            var cost = +prompt(" only write the number of tickets you want for the movie ")
+            alert( "\n price of the " +  cost + " movie tickets are : " + cost*600)
+
+
+            // task 5
+
+            var table = +prompt("write any number for the table")
+            for(var i = 1; i <= 10; i++){
+                document.write( table  + " x " + i + " = " + table*i + "<br>")
+            }
+                
+
+            // task 6
+
+            var tem = +prompt(" enter temperature in Celsius to convert in Fahrenheit ")
+            document.write(tem + "<sup>0</sup>C" + " is " + (tem-32)*5/9 + "<sup>0</sup>F" + "<br>") 
+
+
+            var tem2 = +prompt(" enter temperature in Fahrenheit  to convert in Celsius ")
+            document.write(tem2 + "<sup>0</sup>F" + " is " + (tem2*9/5)+32 + "<sup>0</sup>C") 
+
+
+
+            // task 7
+
+            var item1 = +"200"
+            var quan1 = +prompt(" write the quantity of item 1 ")
+            var item2 = +"600"
+            var quan2 = +prompt("write the quantity of item 2 ")
+            var shipi = +"150"
+            var tol   = (item1*quan1)+(item2*quan2);
+            document.write(" price of item 1 is : " + item1 + "<br>" + " quantity of item 1 is : " + quan1 + "<br>" + " price of item 2 is : "  + item2 + "<br>" + " quantity of item 2 is : " + quan2 + "<br>" + " shipping charges are : "  + shipi + "<br>" + "<br>" + " total cost of your orders with delivery charges are " + tol + " + 150 ")
+
+
+            // task 8
+
+            var tomaks = +prompt("enter your total marks in 5 sunbects")
+            var maksob = +prompt(" enter your abotained marks out of 5 subjects ")
+            var makspr = (maksob/tomaks*100);
+            document.write(" total marks : " + tomaks + "<br>" + " marks obtained : " + maksob + "<br>" + " percentage : " + makspr + "%")
+            
+
+
+
+            // task 9
+
+            var dol = +prompt(" write how much US dollars you want to convert into pakistani rupees ")
+            var rup = 150
+            document.write(" actual amount in dollars is : " + dol + "$" + "<br>" + " converted amount of dollars into rupees is : " + " Rs " + dol*rup + "<br>")
+
+            var riyals = +prompt(" write how much saudi riyal you want to convert into pakistani rupees ")
+            var rupees = 40
+            document.write(" actual amount in riyals is : " + riyals + "<br>" + " converted amount of riyals into rupees is : " + " Rs " + riyals*rupees)
+
+
+            // task 10 has already done above
+
+
+
+
+            // task 11
+
+            alert(" Age Calculator ")
+            var ge = +prompt("write the current year")
+            var ga = +prompt("write the year you was born")
+            var re = ge-ga
+            document.write("<br>" + " <h1> Age Calculator </h1> " + "<br>" + "<br>" + " current year : " + ge + "<br>" + " birth year : " + ga + "<br>" + " your age is : " + re )
+
+
+
+            // task 12
+            // having problem init ( i dont know why)
+
+            // alert(" The Geometrizer ")
+            // var radius = +prompt(" enter the radius of the circle ")
+            // var cal = 2*3.142*radius
+            // var area = 3.142*radius2
+            // document.write(" the circumfrences of a circle is :  " + 2*3.142*radius )
+
+
+
+
+
+
+
+            // task 13
+
+            alert(" the leifetime supply calculator ")
+            var fav = prompt(" write your favourite snack ")
+            var age5 = +prompt(" enter your current age ")
+            var ageestimated = +prompt(" enter your estimated maximum age ")
+            var amount = +prompt(" write the amount of snack per day ")
+            var to1 = ageestimated - age5
+            var to2 = to1*amount
+            document.write("<br>" + " <h1>the life time supply calculator</h1> " + "<br>" + "<br>" + " favourite snack : " + fav + "<br>" + " current age : " + age5 + "<br>" + " estimate maximum age : " + ageestimated + "<br>" + " amount of snack per day : " + amount + "<br>" + " you will need : "  +  to2  + " " + fav + " to last you until the rip age of 65 ")
+
+    </script>
+
+
+
+
+</body>
+
+</html>

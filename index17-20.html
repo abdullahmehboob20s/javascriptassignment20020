@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHAPTER 17-20</title>
+    <link rel="stylesheet" href="bootstrap-4.4.1-dist (1)/bootstrap-4.4.1-dist/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">CHAPTER 17-20</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="index.html">CHAPTER 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index2.html">CHAPTER 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index3.html">CHAPTER 3</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index4.html">CHAPTER 4</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index5.html">CHAPTER 5</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index6-9.html">CHAPTER 6-9</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index9-11.html">CHAPTER 9-11</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index12-13.html">CHAPTER 12-13</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index14-16.html">CHAPTER 14-16</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index17-20.html">CHAPTER 17-20</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+    <script>
+
+    // task 1
+
+    var array = [
+        [],
+        [],
+        [],
+    ]
+    alert(array)
+
+    // task 2
+        
+    var ar = [
+        [0,1,2,3],
+        [1,0,1,2],
+        [2,1,0,1]
+    ]
+    for(var a = 0; a < ar.length; a++){
+        for(var b = 0; b < 4; b++){
+            document.write(ar[a][b] + "  ")
+        }
+        document.write("<br>")
+    }
+
+    // task 3
+
+    for(var c = 1; c <= 10;c++){
+        document.write(c + "<br>")
+    }
+
+    // task 4
+
+    var tab = +prompt("enter a number to show its multiplication table ")
+    var len = +prompt("enter a length of the table ")
+
+    for (var d = 1; d <= len; d++){
+        document.write(tab + " x " + d + " = " + tab*d + "<br>")
+    }
+
+    // task 5
+
+
+    var fruits = [" apple "," banana "," mango "," orange "," strawberry "]
+    for(var e = 0; e < fruits.length; e++){
+        document.write(fruits[e] + "<br>" + "<br>" )
+    }
+
+    for(var f = 0; f < fruits.length; f++){
+        document.write("element at index " + f + " is : " + fruits[f] + "<br>" )
+    }
+
+
+    // task 6
+
+    document.write("<h5>Counting :</h5>")
+    for (var g = 1; g <= 15; g++){
+        document.write(g + " ")
+    }
+    document.write("<br>" + "<br>" + "<h5>Reverse Counting :</h5>")
+    for (var H = 15; H >= 1; H--){
+        document.write(H + " ")
+    }
+    document.write("<br>" + "<br>" + "<h5>Even Numbers :</h5>")
+    for(var i = 0; i <= 20; i++){
+        rem = i%2;
+        if(rem == 0){
+            document.write(i + " ")
+        }
+    }
+    document.write("<br>" + "<br>" + "<h5>Odd Numbers :</h5>")
+    for(var j = 0; j <= 20; j++){
+        rem2 = j%2;
+        if(rem2 == 1){
+            document.write(j + " ")
+        }
+    }
+    document.write("<br>" + "<br>" + "<h5>Series :</h5>")
+    for(var k = 0; k <= 30; k=k+2){
+            document.write(k + "k" + " ")
+    }
+
+
+    // task 7
+
+    var dessert = ["cake","apple pie","cookie","chips","patties"]
+    var find = prompt("welcome to abdullah bakery . what do you want sir/mam ?")
+    find = find.toLowerCase()
+    for(var l = 0; l < dessert.length; l++){
+        if(find === dessert[l]){
+            alert(dessert[l] + " is availabe at index " + dessert.indexOf(find) )
+            break
+        }
+    }
+    
+
+    // task 8
+
+    var A = [122,19,25,99,1220,5000,990,4999,4998,7000,789312]
+    document.write("<h5>Array Items : </h5>" + A + "<br>" + "The Largest Number Is " + Math.max(...A))
+    
+    // task 9
+
+    var B = [10,450,200,100,19,25,980,1220,5000,990,4999,4998,7000,789312]
+    document.write("<h5>Array Items : </h5>" + B + "<br>" + "The Smallest Number Is " + Math.min(...B))
+    
+    // task 10
+
+    for (var m = 0; m <= 100; m=m+5){
+        document.write(m + "  " + " , ")
+    }
+
+
+
+    </script>
+
+
+
+
+</body>
+
+</html>

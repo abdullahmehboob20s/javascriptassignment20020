@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHAPTER 6-9</title>
+    <link rel="stylesheet" href="bootstrap-4.4.1-dist (1)/bootstrap-4.4.1-dist/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">CHAPTER 6-9</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="index.html">CHAPTER 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index2.html">CHAPTER 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index3.html">CHAPTER 3</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index4.html">CHAPTER 4</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index5.html">CHAPTER 5</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index6-9.html">CHAPTER 6-9</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index9-11.html">CHAPTER 9-11</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index12-13.html">CHAPTER 12-13</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index14-16.html">CHAPTER 14-16</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index17-20.html">CHAPTER 17-20</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+    <script>
+        // task 1
+
+        var nm = +prompt(" enter a number ")
+        document.write("<br>" + " Result : " + "<br>" + "the value of a is : " + nm + "<br>" + "..........................................................................." + "<br>" + "<br>" + " the value of ++a is : " + ++nm + "<br>" + " now the value of a is : " + nm + "<br>" + "<br>" + " the value of a++ is : " + nm++ + "<br>" + " now the value of a is : " + nm + "<br>" + "<br>" + " the value of --a is : " + --nm + "<br>" + " now the value of a is : " + nm + "<br>" + "<br>" + " the value of a-- is : " + nm-- + "<br>" + " now the value of a is : " + nm)
+
+
+        var a = 2 , b = 1 ;
+
+        document.write(" a is : " + a + "<br>" + " b is : " + b + "<br>" + " result is : " + ( --a - --b + ++b + b--) + "<br>" + "<br>"  + " --a : " + --a + "<br>" + " --a - --b : " + (--a - --b) + "<br>" +  " --a - --b + ++b : " + ( --a - --b + ++b) + " <br>" + " --a - --b + ++b + b-- : " + ( --a - --b + ++b + b--))
+
+
+
+        // task 3 
+
+
+        var name = prompt(" enter your name ")
+        alert(" welcome " + name)
+
+        // task 5
+
+        var table = +prompt(" enter a number for table ")
+        if (table > 0 ) {
+            for (var i = 1; i <= 10; i++) {
+                document.write(table + " x " + i + " = " + table * i + "<br>")
+            }
+        }
+
+
+        else {
+            for (var i = 1; i <= 10; i++){
+                document.write(5 + " x " + i + " = " + 5 * i + "<br>")
+            }
+        }
+
+        // task 6
+
+        var fsubject = prompt(" enter your first subject")
+        var ssubject = prompt(" enter second subject")
+        var tsubject = prompt(" enter third subject")
+
+        var totalmarks = 100;
+
+        var obmarks1 = +prompt(" enter your obtained marks in " + fsubject + " subject out of 100")
+        var obmarks2 = +prompt(" enter obtained marks in " + ssubject + " subject out of 100")
+        var obmarks3 = +prompt(" enter obtained marks in " + tsubject + " subject out of 100")
+
+
+        var total = 300
+        var obtained = obmarks1+obmarks2+obmarks3
+        var final = obtained/total*100
+
+        document.write(fsubject + " " + obmarks1 + "<br>" + ssubject + " " + obmarks2 + "<br>" + tsubject + " " + obmarks3 + "<br>" + "<br>" + " total marks " + 300 + "<br>" + " obtained total marks " + obtained + "<br>" + " percentage is " + final + "%")
+
+        // task 7 is not given
+
+
+
+
+
+
+    </script>
+
+
+
+
+</body>
+
+</html>

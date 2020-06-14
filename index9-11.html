@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHAPTER 9-11</title>
+    <link rel="stylesheet" href="bootstrap-4.4.1-dist (1)/bootstrap-4.4.1-dist/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">CHAPTER 9-11</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="index.html">CHAPTER 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index2.html">CHAPTER 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index3.html">CHAPTER 3</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index4.html">CHAPTER 4</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index5.html">CHAPTER 5</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index6-9.html">CHAPTER 6-9</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index9-11.html">CHAPTER 9-11</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index12-13.html">CHAPTER 12-13</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index14-16.html">CHAPTER 14-16</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index17-20.html">CHAPTER 17-20</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+    <script>
+        // task 1
+
+        var city = prompt(" enter your city name ")
+        city = city.toLowerCase()
+
+        if(city === "karachi"){
+            alert(" welcome to the city of light ")
+        }
+        else {
+            alert(" welcome to " + city)
+        }
+
+        // task 2
+
+        var gender = prompt(" enter your gender ")
+        gender = gender.toLowerCase()
+        if(gender === "female"){
+            alert("Good Morning Ma’am ")
+        }
+        else if(gender === "male"){
+            alert("Good Morning Sir ")
+        }
+        else(
+            alert("you made a mistake ")
+        )
+
+
+        // task 3
+
+
+        var color = prompt(" enter a traffic signal color " )
+        color = color.toLowerCase()
+        if( color === "red"){
+            alert("Must Stop")
+
+        }
+        else if( color === "yellow"){
+            alert("Ready to move")
+        }
+        else if( color === "green"){
+            alert("Move now")
+        }
+        else{
+            alert("you made a mistake \nor\nyou did not write the traffic signal color")
+        }
+
+        // task 4
+
+        var fuel = +prompt(" enter your remaining car fuel in liters ")
+        if(fuel < 0.25){
+            alert("“Please refill the fuel in your car")
+        }
+        else{
+            alert("you are ready to go")
+        }
+
+
+        // task 5
+
+        // a
+        var a = 4;
+        if (++a === 5) {
+            alert("given condition for variable a is true");
+        }
+
+        // b
+        var b = 82;
+        if (b++ === 83) {
+            alert("given condition for variable b is true");
+        }
+
+
+        // c
+
+        var c = 12;
+        if (c++ === 13) {
+            alert("condition 1 is true");
+        }
+        if (c === 13) {
+            alert("condition 2 is true");
+        }
+        if (++c < 14) {
+            alert("condition 3 is true");
+        }
+        if (c === 14) {
+            alert("condition 4 is true");
+        }
+
+
+        // d
+
+
+        var materialCost = 20000;
+        var laborCost = 2000;
+        var totalCost = materialCost + laborCost;
+        if (totalCost === laborCost + materialCost) {
+            alert("The cost equals");
+        }
+
+
+        // e
+
+        if (true) {
+            alert("True");
+        }
+        if (false) {
+            alert("False");
+        }
+
+
+        // f
+
+        if ("car" < "cat") {
+            alert("car is smaller than cat");
+        }
+
+        
+
+        // task 6
+
+        var tm = +prompt(" enter a total marks ")
+        var t1 = +prompt(" enter a total mark of one subject ")
+        var om = +prompt(" enter obtained marks out of " + tm)
+        var pr = om/tm*t1
+        pr = pr.toFixed(2)
+        document.write("<h1>Marks Sheet</h1>" + "<br>" + "<br>" + "total marks : " + tm + "<br>" + "obtained marks : " + om + "<br>" + "total marks in one subject : " + t1 + "<br>" + "percentage : " + pr + "%" + "<br>")
+
+        if(pr >= 80 & pr <= 100){
+            document.write("grade : A+" + "<br>" + "remarks : excellent" )
+        }
+        else if(pr >= 70 & pr <= 79.99){
+            document.write("grade : B" + "<br>" + "remarks : good")
+        }
+        else if(pr >= 60 & pr <= 69.99){
+            document.write("grade : C" + "<br>" + "remarks : you need to improve")
+        }
+        else if(pr <= 60){
+            document.write("grade : Fail" + "<br>" + "remarks : sorry")
+        }
+
+        // task 7
+
+        var numuni = +prompt(" enter a secret number between 1 to 10 to win the game ")
+        if(numuni === 6){
+            alert("Bingo! Correct answer")
+        }
+        else if(numuni >= 1 & numuni <= 4){
+            alert("keep trying")
+        }
+        else if( numuni <= 10 & numuni >= 8){
+            alert("keep trying")
+        }
+        else if (numuni === 5){
+            alert("Close enough to the correct answer")
+        }
+        else if (numuni === 7){
+            alert("Close enough to the correct answer")
+        }
+        else if(numuni > 10 ){
+            alert("error \nchoose any number between 1 to 10")
+        }
+        else if(numuni === 0 ){
+            alert("error \nchoose the number greater than 0")
+        }
+        
+
+        // task 8
+
+        var num = +prompt(" enter a number which is divisible by 3 ")
+        var div = num%3;
+        if(div === 0){
+            alert( num + " is divisible by 3")
+        }
+        else{
+            alert(num + " is not divisible by 3")
+        }
+
+        
+        // task 9
+
+
+        var inp = +prompt("enter a number to wheather its even or odd")
+        if( (inp%2) === 0 ){
+            alert(inp + " is a even number ")
+        }
+        else {
+            alert(inp + " is a odd number ")
+        }
+
+        // task 10
+
+        var tem = +prompt("enter temperature in numbers")
+        if(tem >= 40){
+            alert("It is too hot outside")
+        }
+        else if(tem >= 30 & tem <= 39.99){
+            alert("The Weather today is Normal")
+        }
+        else if(tem >= 20 & tem <= 29.99){
+            alert("Today’s Weather is cool")
+        }
+        else if(tem >= 10 & tem <= 19.99){
+            alert(" weather is Cool today")
+        }
+        else if(tem >= 1 & tem <= 9.99){
+            alert("OMG! Today’s weather is so Cool . take care of your self")
+        }
+        else{
+            alert("you made a mistake")
+        }
+
+
+
+        // task 11
+
+        var nu1 = +prompt("enter first number")
+        var sig = prompt("enter the operator")
+        var nu2 = +prompt("enter second number")
+
+        if(sig === "+"){
+            alert( nu1 + " " + sig + " " + nu2 + " = " + (nu1+nu2))
+        }
+        else if(sig === "-"){
+            alert( nu1 + " " + sig + " " + nu2 + " = " + (nu1-nu2))
+        }
+        else if(sig === "*"){
+            alert( nu1 + " " + sig + " " + nu2 + " = " + (nu1*nu2))
+        }
+        else if(sig === "/"){
+            alert( nu1 + " " + sig + " " + nu2 + " = " + (nu1/nu2))
+        }
+        else if(sig === "%"){
+            alert( nu1 + " " + sig + " " + nu2 + " = " + (nu1/nu2)*100)
+        }
+        else{
+            alert("you have made a mistake")
+        }
+
+
+
+
+
+
+
+
+
+
+
+        
+    </script>
+
+
+
+
+</body>
+
+</html>

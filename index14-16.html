@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHAPTER 14-16</title>
+    <link rel="stylesheet" href="bootstrap-4.4.1-dist (1)/bootstrap-4.4.1-dist/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">CHAPTER 14-16</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="index.html">CHAPTER 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index2.html">CHAPTER 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index3.html">CHAPTER 3</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index4.html">CHAPTER 4</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index5.html">CHAPTER 5</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index6-9.html">CHAPTER 6-9</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index9-11.html">CHAPTER 9-11</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index12-13.html">CHAPTER 12-13</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index14-16.html">CHAPTER 14-16</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index17-20.html">CHAPTER 17-20</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+    <script>
+
+
+    // task 1
+
+    var studentsname = [""]
+
+    // task 2
+
+    var studentsname = [""]
+
+    // task 3
+
+    var dec = ["abdullah","mehboob","fizza","aliyan"]
+    alert(dec)
+
+    // task 4
+
+    var int = [1,2,3,4,5,6,7,8,9,10]
+    alert(int)
+
+    // task 5
+
+    // i dont know boolean array
+
+    // task 6
+
+    // i also dont know mixed array
+
+    // task 7
+
+    var education = ["1) SSC","2) HSC","3) BCS","4) BS","5) BCOM","6) MS","7) M.PHIL","8) PhD"]
+    document.write("<br>" + "<h1>Qualifications : </h1>" + "<br>")
+    for(var i = 0; i < education.length; i++){
+        document.write(education[i] + "<br>")
+    }
+
+
+    // task 8
+
+    var namestu = [ "Michale "," jhony "," tony "]
+    var nammark = ["320","400","478"]
+    
+    document.write( " score of " + namestu.slice(0 , 1) +  nammark.slice(0 , 1) + " percentage " + 320/500*100 + "%" + "<br>"+ " score of "  + namestu.slice(1 , 2) +  nammark.slice(1 , 2) + " percentage " + 400/500*100 + "%" + "<br>" + " score of "  + namestu.slice(2 , 3) +  nammark.slice(2 , 3) + " percentage " + 478/500*100 + "%")
+
+    // task 9
+
+    
+    var colors = [" green "," orange "," blue "]
+    alert(colors)
+    var promps = prompt(" what color you want to add in the beginning of array ")
+    colors.unshift(promps)
+    alert(colors)
+    var promps2 = prompt(" what color you want add to the end of the array ")
+    colors.push(promps2)
+    alert(colors)
+    var promps3 = prompt(" what two color you want to add to the beginning of the array write in commas ( , )")
+    colors.unshift(promps3)
+    alert(colors)
+    colors.splice(0 , 1)
+    alert(colors)
+    colors.pop()
+    alert(colors)
+    var promps5 = prompt(" at what index you want to add a color onlu write one number")
+    var promps6 = prompt(" whta color you want to remove from the array ")
+    var promps7 = prompt(" what color you want add ")
+    colors.splice(promps5,promps6,promps7)
+    alert(colors)
+    var promps8 = prompt(" at what index you want to delete a color ")
+    var promps9 = prompt(" how many color you want to delete ")
+    colors.splice(promps8,promps9)
+    alert(colors)
+
+    // task 10
+
+    var ordsc = [" 120 "," 200 "," 150 "," 500 "," 350 "," 199 "," 400 "," 627 "," 894 " , " 012 "]
+    document.write("scores of students : " + ordsc + "<br>" )
+    ordsc.sort()
+    document.write("ordered scores of students : " + ordsc + "<br>" )
+
+    // task 11
+
+    var cities = [" karachi "," islamabad "," quetta "," lahore "," peshawar "]
+    document.write("<h5>Cities List : </h5>" + cities + "<br>" + "<br>")
+    cities = cities.slice(2 , 5)
+    document.write("<h5>Selected Cities List : </h5>" + cities)
+
+    // task 12
+
+    var arr = [" This "," Is "," My "," Cat "]
+    document.write("<h5>Array's</h5>" + arr + "<br>"+ "<br>")
+    var arr2 = [" This Is My Cat "]
+    document.write("<h5>String</h5>" + arr2)
+
+
+    // task 13
+
+    var device = ["0) keyboard ","1) mouse ","2) printer ","3) monitor "]
+    alert(device)
+    var finale = +prompt(" write a number to the thing you want from the previous alert "," 0) keyboard ,1) mouse ,2) printer ,3) monitor ");
+    // device = device.toLowerCase()
+    var slice = device.splice(finale,1)
+    alert(slice)
+
+    // task 14
+
+    var device = [" keyboard "," mouse "," printer "," monitor "]
+    device = device.reverse()
+    alert(device)
+    var finale = +prompt(" write a number to the thing you want from the previous alert "," 0) keyboard ,1) mouse ,2) printer ,3) monitor ");
+    // device = device.toLowerCase()
+    var slice = device.splice(finale,1)
+    alert(slice)
+
+    // task 15
+
+    // samaj nhi aya 
+
+
+
+        
+
+    </script>
+
+
+
+
+</body>
+
+</html>

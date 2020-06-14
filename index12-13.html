@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHAPTER 12-13</title>
+    <link rel="stylesheet" href="bootstrap-4.4.1-dist (1)/bootstrap-4.4.1-dist/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">CHAPTER 12-13</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="index.html">CHAPTER 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index2.html">CHAPTER 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index3.html">CHAPTER 3</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index4.html">CHAPTER 4</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index5.html">CHAPTER 5</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index6-9.html">CHAPTER 6-9</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index9-11.html">CHAPTER 9-11</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index12-13.html">CHAPTER 12-13</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index14-16.html">CHAPTER 14-16</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index17-20.html">CHAPTER 17-20</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+    <script>
+        // task 1 
+
+        var nameup = prompt("enter your name ")
+        var char = nameup.charCodeAt(0)
+        // alert(char)
+        if(char >= 65 && char <= 96){
+            alert( " given input is uppercase word " + " ( " + nameup + " ) ")
+        }
+        else if(char >= 97 && char <= 122){
+            alert( " given input is lowercase word " + " ( " + nameup + " ) ")
+        }
+        else if(char >= 48 && char <= 57){
+            alert( " given input is a number " + " ( " + nameup + " ) ")
+        }
+        else{
+            alert("you made a mistake")
+        }
+
+
+
+
+
+        // task 2
+
+        var et = +prompt(" enter first number ")
+        var et1 = +prompt(" enter second number ")
+        if(et > et1){
+            alert(et + " is greater than " + et1)
+        }
+        else if(et1 > et){
+            alert(et1 + " is greater than " + et)
+        }
+        else if(et1 === et){
+            alert(et1 + " is equal to " + et)
+        }
+        else{
+            alert("error \nyou made a mistake")
+        }
+
+        // task 3
+
+
+        var nmb = +prompt("enter a number")
+        if(nmb > 0){
+            alert("the number is positive")
+        }
+        else if(nmb < 0){
+            alert("the number is negative")
+        }
+        else if(nmb === 0){
+            alert("the number is zero")
+        }
+        else{
+            alert("you made a mistake")
+        }
+
+        // task 4
+
+
+        var fy = prompt(" only enter your first name")
+        fy = fy.toLowerCase()
+        var sl = fy.slice(0 , 1)
+        // document.write(sl)
+        if(sl === "a" || sl === "e" || sl === "i" || sl === "o" || sl === "u"  ){
+            alert(" the first letter of your name " + " ( " + sl + " ) " + " is vowel ")
+        }
+        else {
+            alert(" the first letter of your name " + " ( " + sl + " ) " + " is not a vowel ")
+        }
+
+        // task 5
+
+        var pas1 = prompt("enter your password")
+        var pas2 = prompt("confirm your password")
+        if(pas1 === pas2){
+            alert("correct")
+        }
+        else if(pas1 !== pas2){
+            alert("incorrect")
+        }
+        else{
+            alert("please enter your password")
+        }
+
+        // task 6
+
+        var greeting = "greeting";
+        var hour = prompt("enter weather its day or night")
+        hour = hour.toLowerCase()
+        if (hour === "day") {
+            alert("Good day") ;
+        }
+
+        else if(hour === "night")  {
+                alert("Good night") ;
+        }
+
+        else{
+            alert("enter day or night")
+        }
+
+        // task 7
+
+        var time = +prompt("enter a time in 24 hour format like : 1900 = 7pm");
+
+        if(time >= 0000 && time < 1200){
+            alert("good morning")
+        }
+
+        else if(time >= 1200 && time < 1700){
+            alert("good afternoon")
+        }
+        else if(time >= 1700 && time < 2100){
+            alert("good evening")
+        }
+        else if(time >= 2100 && time <= 2359){
+            alert("good night")
+        }
+        else {
+            alert("write a time in 24 hour format like : 1900 = 7pm")
+        }
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+</body>
+
+</html>
